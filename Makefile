@@ -10,7 +10,6 @@ install_templates:
 	@echo "Installing templates"
 	@echo '🐶  scene pure code: success ✅'
 	@echo '🦊  service: success ✅'
-	@echo '🦖  UICollectionView: success ✅'
 	@echo 'Install template success. ✳️'
 
 uninstall_templates:
