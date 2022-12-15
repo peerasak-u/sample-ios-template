@@ -10,7 +10,7 @@ import SnapKit
 
 // sourcery: AutoMockable
 protocol ___VARIABLE_viewControllerName___DisplayLogic: AnyObject {
-    func displayErrorDialog(viewModel: ___VARIABLE_sceneName___Model.PresentErrorDialog.ViewModel)
+    func displayErrorDialog(viewModel: ___VARIABLE_sceneName___Models.PresentErrorDialog.ViewModel)
 }
 
 class ___VARIABLE_viewControllerName___: UIViewController {

@@ -10,7 +10,7 @@ import UIKit
 
 //source: AutoMockable
 protocol ___VARIABLE_presenterName___PresentationLogic: AnyObject {
-    func performPresentErrorDialog(response: ___VARIABLE_sceneName___Models.PresentDefaultErrorDialog.Response)
+    func performPresentErrorDialog(response: ___VARIABLE_sceneName___Models.PresentErrorDialog.Response)
 }
 
 class ___VARIABLE_presenterName___: ___VARIABLE_presenterName___PresentationLogic {
@@ -18,7 +18,7 @@ class ___VARIABLE_presenterName___: ___VARIABLE_presenterName___PresentationLogi
 
     func performPresentErrorDialog(response: ___VARIABLE_sceneName___Models.PresentErrorDialog.Response) {
         viewController?.displayErrorDialog(viewModel: .init(title: "Oops!",
-                                                            message: response.error?.description ?? "Something went wrong."))
+                                                            message: response.error?.localizedDescription ?? "Something went wrong."))
     }
 }
 
