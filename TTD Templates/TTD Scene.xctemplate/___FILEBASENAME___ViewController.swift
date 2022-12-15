@@ -58,7 +58,7 @@ private extension ___VARIABLE_viewControllerName___ {
 
 extension ___VARIABLE_viewControllerName___: ___VARIABLE_viewControllerName___DisplayLogic {
 
-    func displayErrorDialog(viewModel: ___VARIABLE_sceneName___Model.PresentErrorDialog.ViewModel) {
+    func displayErrorDialog(viewModel: ___VARIABLE_sceneName___Models.PresentErrorDialog.ViewModel) {
         debugPrint("Error na!")
     }
 
