@@ -16,7 +16,7 @@ protocol ___VARIABLE_viewControllerName___DisplayLogic: AnyObject {
 class ___VARIABLE_viewControllerName___: UIViewController {
 
     var interactor: ___VARIABLE_interactorName___BusinessLogic!
-    var router: ___VARIABLE_routerName___able!
+    var router: ___VARIABLE_routerName___RoutingLogic!
 
     lazy var dummyLabel: UILabel = {
         let label = UILabel()

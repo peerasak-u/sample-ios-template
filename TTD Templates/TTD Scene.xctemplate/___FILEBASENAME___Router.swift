@@ -10,8 +10,6 @@ import UIKit
 
 // sourcery: AutoMockable
 protocol ___VARIABLE_routerName___RoutingLogic {
-    var viewController: ___VARIABLE_viewControllerName___?
-
     static func createScene() -> ___VARIABLE_viewControllerName___
 }
 

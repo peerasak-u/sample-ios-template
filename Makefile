@@ -1,6 +1,6 @@
 XCODE_USER_TEMPLATES_DIR=~/Library/Developer/Xcode/Templates
 
-TEMPLATES_DIR=Templates
+TEMPLATES_DIR=TTD\ Templates
 
 install_templates:
 	@echo "\n\n\033[6;37;45m ---------- Start templates ---------- \033[0m"
