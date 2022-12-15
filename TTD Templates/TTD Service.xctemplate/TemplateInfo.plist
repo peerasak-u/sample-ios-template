@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Service Name</string>
+	<key>Description</key>
+	<string>make remote service  local service with router protocol</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of service</string>
+			<key>Identifier</key>
+			<string>serviceName</string>
+			<key>Name</key>
+			<string>Service Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_serviceName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_serviceName:identifier___ServiceModel</string>
+			<key>Description</key>
+			<string>Service Model Name</string>
+			<key>Identifier</key>
+			<string>serviceModelName</string>
+			<key>Name</key>
+			<string>Service Model Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_serviceName:identifier___RouterService</string>
+			<key>Description</key>
+			<string>Service Router Name</string>
+			<key>Identifier</key>
+			<string>serviceRouterName</string>
+			<key>Name</key>
+			<string>Service Router Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_serviceName:identifier___RemoteService</string>
+			<key>Description</key>
+			<string>Remote Service Name</string>
+			<key>Identifier</key>
+			<string>remoteServiceName</string>
+			<key>Name</key>
+			<string>Remote Service Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_serviceName:identifier___LocalService</string>
+			<key>Description</key>
+			<string>Local Service Name</string>
+			<key>Identifier</key>
+			<string>localServiceName</string>
+			<key>Name</key>
+			<string>Local Service Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_serviceName:identifier___ServiceWorker</string>
+			<key>Description</key>
+			<string>Worker Name</string>
+			<key>Identifier</key>
+			<string>serviceWorkerName</string>
+			<key>Name</key>
+			<string>Worker Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>2</string>
+	<key>Summary</key>
+	<string>This generates a new scene using Uncle Bob&apos;s clean architecture.</string>
+</dict>
+</plist>
