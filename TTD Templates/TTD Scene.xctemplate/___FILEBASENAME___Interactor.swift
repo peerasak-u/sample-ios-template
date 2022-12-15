@@ -16,7 +16,7 @@ protocol ___VARIABLE_interactorName___DataStore: AnyObject {}
 
 // MARK: - Interactor
 class ___VARIABLE_interactorName___: ___VARIABLE_interactorName___BusinessLogic {
-    var presenter: ___VARIABLE_presenterName___PresentationLogic?
+    var presenter: ___VARIABLE_sceneName___PresentationLogic?
     var worker = ___VARIABLE_sceneWorkerName___()
 }
 

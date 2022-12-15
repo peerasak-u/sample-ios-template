@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 //source: AutoMockable
-protocol ___VARIABLE_presenterName___PresentationLogic: AnyObject {
+protocol ___VARIABLE_sceneName___PresentationLogic: AnyObject {
     func performPresentErrorDialog(response: ___VARIABLE_sceneName___Models.PresentErrorDialog.Response)
 }
 
-class ___VARIABLE_presenterName___: ___VARIABLE_presenterName___PresentationLogic {
+class ___VARIABLE_presenterName___: ___VARIABLE_sceneName___PresentationLogic {
     weak var viewController: ___VARIABLE_viewControllerName___DisplayLogic?
 
     func performPresentErrorDialog(response: ___VARIABLE_sceneName___Models.PresentErrorDialog.Response) {
