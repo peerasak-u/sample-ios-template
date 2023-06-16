@@ -1,5 +1,3 @@
-# DRY - don't repeat yourself
-
 # TTD iOS Templates
 
 ## What is xcode template
