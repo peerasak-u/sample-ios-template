@@ -8,9 +8,9 @@ install_templates:
 	@rm -fR $(XCODE_USER_TEMPLATES_DIR)/$(TEMPLATES_DIR)
 	@cp -R $(TEMPLATES_DIR) $(XCODE_USER_TEMPLATES_DIR)
 	@echo "Installing templates"
-	@echo '🐶  scene pure code: success ✅'
-	@echo '🦊  service: success ✅'
-	@echo 'Install template success. ✳️'
+	@echo '🧠  scene pure code: success ✅'
+	@echo '🌎  service: success ✅'
+	@echo 'Install template success. ✅'
 
 uninstall_templates:
 	@rm -fR $(XCODE_USER_TEMPLATES_DIR)/$(TEMPLATES_DIR)
