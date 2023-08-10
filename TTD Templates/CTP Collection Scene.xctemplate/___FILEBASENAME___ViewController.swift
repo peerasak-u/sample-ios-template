@@ -65,12 +65,28 @@ private extension ___VARIABLE_viewControllerName___ {}
 private extension ___VARIABLE_viewControllerName___ {
 
     func initUI() {
-        self.view.addSubview(dummyLabel)
+        view.addSubview(dummyView)
+        view.addSubview(formNavBar)
+        view.addSubview(collectionView)
     }
     
     func initLayoutConstraint() {
-        self.dummyLabel.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+        dummyView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.left.right.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.top)
+        }
+        
+        formNavBar.snp.makeConstraints { make in
+            make.top.equalTo(dummyView.snp.bottom)
+            make.left.right.equalToSuperview()
+            make.height.equalTo(56)
+        }
+        
+        collectionView.snp.makeConstraints { make in
+            make.top.equalTo(formNavBar.snp.bottom)
+            make.left.right.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
     }
 
