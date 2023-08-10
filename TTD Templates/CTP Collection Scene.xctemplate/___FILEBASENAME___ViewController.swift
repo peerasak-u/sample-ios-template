@@ -145,7 +145,7 @@ private extension ___VARIABLE_viewControllerName___ {
     }
 
     func makeDatasoure(for collectionView: UICollectionView) -> DataSource {
-        let dataSource = UICollectionViewDiffableDataSource<___VARIABLE_interactorName___.Section, String>(collectionView: collectionView) { [weak self] (collectionView, indexPath, identifier) -> UICollectionViewCell? in
+        let dataSource = UICollectionViewDiffableDataSource<___VARIABLE_interactorName___.Section, UUID>(collectionView: collectionView) { [weak self] (collectionView, indexPath, identifier) -> UICollectionViewCell? in
             
             guard
                 let sectionModel = self?.dataStore.sections.valueAtIndex(indexPath.section)

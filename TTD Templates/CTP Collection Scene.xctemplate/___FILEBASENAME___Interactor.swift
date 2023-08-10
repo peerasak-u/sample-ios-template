@@ -16,7 +16,7 @@ protocol ___VARIABLE_interactorName___BusinessLogic: AnyObject {
 // sourcery: AutoMockable
 protocol ___VARIABLE_interactorName___DataStore: AnyObject {
     var sections: [___VARIABLE_interactorName___.SectionModel] { get }
-    var snapshot: NSDiffableDataSourceSnapshot<___VARIABLE_interactorName___.Section, String> { get }
+    var snapshot: NSDiffableDataSourceSnapshot<___VARIABLE_interactorName___.Section, UUID> { get }
 }
 
 // MARK: - Interactor
@@ -58,7 +58,7 @@ extension ___VARIABLE_interactorName___: ___VARIABLE_interactorName___DataStore 
         case itemA(title: String)
         case itemB(title: String)
         
-        var identifier: String {
+        var identifier: UUID {
             switch self {
             case let .itemA(title):
                 return UUID()
