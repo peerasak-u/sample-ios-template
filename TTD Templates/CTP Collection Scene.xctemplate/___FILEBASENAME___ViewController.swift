@@ -175,7 +175,7 @@ private extension ___VARIABLE_viewControllerName___ {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemACell",
                                                               for: indexPath)
                 
-                if case let .itemA(title)) = sectionModel.items[indexPath.row] {
+                if case let .itemA(title) = sectionModel.items[indexPath.row] {
                     // TODO: - Bind data here
                 }
                 
