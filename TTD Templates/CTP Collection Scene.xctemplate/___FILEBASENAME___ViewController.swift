@@ -36,7 +36,7 @@ class ___VARIABLE_viewControllerName___: UIViewController {
     lazy var collectionView: UICollectionView = {
         let element = UICollectionView(frame: .zero,
                                               collectionViewLayout: createLayout())
-        dataSource = makeDatasoure(for: collectionView)
+        dataSource = makeDatasoure(for: element)
         // TODO: - Register cell
         // collectionView.register(ItemACell.self,
         //                         forCellWithReuseIdentifier: "ItemACell")
@@ -84,7 +84,7 @@ private extension ___VARIABLE_viewControllerName___ {
         }
         
         collectionView.snp.makeConstraints { make in
-            make.top.equalTo(formNavBar.snp.bottom)
+            make.top.equalTo(navBar.snp.bottom)
             make.left.right.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
