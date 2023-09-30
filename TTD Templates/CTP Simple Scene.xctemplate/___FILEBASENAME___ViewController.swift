@@ -17,7 +17,6 @@ protocol ___VARIABLE_viewControllerName___DisplayLogic: AnyObject {
 class ___VARIABLE_viewControllerName___: UIViewController {
 
     var interactor: ___VARIABLE_interactorName___BusinessLogic!
-    var dataStore: ___VARIABLE_interactorName___DataStore!
     var router: ___VARIABLE_routerName___RoutingLogic!
 
     private var dataSource: DataSource!
@@ -30,21 +29,6 @@ class ___VARIABLE_viewControllerName___: UIViewController {
     
     lazy var navBar: CTPNavBar = {
         let element = CTPNavBar(title: "Scene Name")
-        return element
-    }()
-
-    lazy var collectionView: UICollectionView = {
-        let element = UICollectionView(frame: .zero,
-                                              collectionViewLayout: createLayout())
-        dataSource = makeDatasoure(for: collectionView)
-        // TODO: - Register cell
-        // collectionView.register(ItemACell.self,
-        //                         forCellWithReuseIdentifier: "ItemACell")
-        // collectionView.register(ItemBCell.self,
-        //                         forCellWithReuseIdentifier: "ItemBCell")
-        element.backgroundColor = .white
-        element.dataSource = dataSource
-        
         return element
     }()
 
@@ -66,8 +50,7 @@ private extension ___VARIABLE_viewControllerName___ {
 
     func initUI() {
         view.addSubview(dummyView)
-        view.addSubview(navBar)
-        view.addSubview(collectionView)
+        view.addSubview(formNavBar)
     }
     
     func initLayoutConstraint() {
